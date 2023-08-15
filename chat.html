@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="navpanel.css">
+  <title>Пример чата</title>
+  
+</head>
+<body>
+<!-- Панель навигации сверху -->
+<div class="nav-correct">
+  <nav class="awesome-navbar">
+    <div class="awesome-grid">
+    <ul>
+      <li><a href="https://klumhubstudio.github.io/index" target="_blank">Наш сайт</a></li>
+      <li><a href="https://discord.gg/taWdunRAjY">Наш Discord</a></li>
+      <li><a href="report.html">Пожаловаться</a></li>
+      <div id="changeColorButtonMobile">
+        <a href="#">
+          <div id="changeColorButton1">
+            <li>Изменить тему</li>
+            </div>
+        </a>
+      </div>
+      
+       
+      </li>
+    </ul>
+  </div>
+  
+  
+  <div class="theme">
+       
+    <div id="changeColorButton">
+      <a href="#">
+        <img src="img/settings.png" alt="Изменить тему" id="changeColorButton" width="30%">
+      </a>
+    </div>
+  </div>
+</nav>
+</div>
+
+  
+  <div class="grid-panel">
+  <div class="font-1">
+    
+  <div class="navbar">
+    <div class="navbar-toggle" onclick="toggleNavbar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar-items">
+      <a href="chat.html" class="navbar-item">Общий чат</a>
+      <a href="flea.html" class="navbar-item">Барахолка</a>
+      <a href="finded.html" class="navbar-item">Бюро находок</a>
+      <br><br><br>
+      <div class="navbar-items-mobile">
+  
+          <a href="https://klumhubstudio.github.io/index" class="navbar-item" target="_blank">Наш сайт</a>
+     <a href="https://discord.gg/taWdunRAjY" class="navbar-item">Наш Discord</a>
+    <a href="report.html" class="navbar-item">Пожаловаться</a>
+    <div id="changeColorButtonMobile1">
+      <a href="#">
+        <div id="changeColorButton" class="navbar-item">
+          Изменить тему
+          </div>
+      </a>
+    </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="form-font-1">
+    <button class="scroll-button" onclick="scrollDown()">Вниз</button>
+  </div>
+
+
+
+
+
+
+  <div class="font-2">
+
+
+  <div id="chat"></div> 
+  <form id="messageForm">
+    <input type="text" id="senderInput" placeholder="Ваш никнейм" required>
+    <input type="text" id="messageInput" placeholder="Введите сообщение" required>
+    <button type="submit">Отправить</button>
+  </form>
+
+
+</div>
+
+<div class="font-0">
+  
+</div>
+
+
+</div>
+<div id="notification">
+   
+  <p>Изменить тему чата можно сверху в правом углу!</p>
+  </div>
+
+  <div id="notification1">
+   
+    <p>Выражайся в чате красивее :></p>
+    </div>
+
+  <script src="scriptchat.js"></script>
+  <script>function teleport() {
+    window.scrollTo(0, document.body.scrollHeight);
+}</script>
+<script>
+
+function toggleNavbar() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('open');
+}
+
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
