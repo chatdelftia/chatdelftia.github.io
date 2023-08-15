@@ -16,7 +16,7 @@ p {
 
 /* Формат сообщений */
   .message {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   .sender {
     font-weight: bold;
@@ -28,7 +28,7 @@ p {
   }
 
   #messageForm {
-    
+    padding-top: 100px;
  
    
   }
