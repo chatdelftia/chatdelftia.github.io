@@ -29,7 +29,7 @@ function sendMessage() {
   var message = messageInput.value;
 
   if (sender && message) {
-    if (sender === "Макс" || sender === "Мaкс" || sender === "Maкс" || sender === "мaкс") {
+    if (sender === "Макс" || sender === "Мaкс" || sender === "Maкс" || sender === "мaкс" || sender === "МАКС" || sender === "Маkс" || sender === "маkс" || sender === "Makc" || sender === "Mакс" || sender === "Светлая головушка" || sender === "светлая головушка" || sender === "Максик" || sender === "Максим Кустов" || sender === "Максим кустов") {
       var confirmation = confirm("Вам выдано предупреждение! Запрещено выдавать себя за других людей!");
       
       if (!confirmation) {
@@ -40,6 +40,8 @@ function sendMessage() {
         return;
       }
     }
+
+   
 
  
     
@@ -98,3 +100,10 @@ function sendMessage() {
         sendMessage();
       });
     });
+
+
+    // Запрет на копирование
+    document.addEventListener('copy', function(e){
+      e.preventDefault();
+      alert('Копирование запрещено!');
+      });
