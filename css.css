@@ -28,6 +28,7 @@ p {
   }
 
   #messageForm {
+   
     padding-top: 100px;
  
    
@@ -56,6 +57,15 @@ p {
   button:active {
     background-color: #3e8e41;
   }
+
+
+
+
+.message {
+ display: flexbox;
+ 
+
+}
 
 
   /* Формат чат-страницы */
@@ -139,7 +149,7 @@ grid-template-columns: repeat(10, 1fr);
 .awesome-navbar a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -209,6 +219,17 @@ border: 1px solid #ccc;
 border-radius: 4px;
 display: none;
 }
+
+#notification2 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  }
 
   /* Рамка подтвердить */
 
@@ -302,8 +323,10 @@ display: none;
   
 
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       
+    
+
       .awesome-grid {
         display: none;
       }
@@ -316,6 +339,8 @@ display: none;
         opacity: 1;
       }
 
+     
+
 
 
 
@@ -323,7 +348,7 @@ display: none;
     }
 
 
-    @media (min-width: 501px)
+    @media (min-width: 601px)
 {
   .navbar-items-mobile {
     opacity: 0;
