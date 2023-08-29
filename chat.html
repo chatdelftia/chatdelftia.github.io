@@ -3,8 +3,12 @@
 <head>
   <link rel="stylesheet" href="css.css">
   <link rel="stylesheet" href="navpanel.css">
-  <title>Пример чата</title>
-  
+  <title>Общий чат</title>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+  </style>
 </head>
 <body>
 <!-- Панель навигации сверху -->
@@ -15,6 +19,10 @@
       <li><a href="https://klumhubstudio.github.io/index" target="_blank">Наш сайт</a></li>
       <li><a href="https://discord.gg/taWdunRAjY">Наш Discord</a></li>
       <li><a href="report.html">Пожаловаться</a></li>
+      <div class="search-panel">
+        <input type="text" id="searchInput" placeholder="Поиск">
+        </div>
+      
       <div id="changeColorButtonMobile">
         <a href="#">
           <div id="changeColorButton1">
@@ -24,7 +32,7 @@
       </div>
       
        
-      </li>
+      
     </ul>
   </div>
   
@@ -62,9 +70,12 @@
     <a href="report.html" class="navbar-item">Пожаловаться</a>
     <div id="changeColorButtonMobile1">
       <a href="#">
-        <div id="changeColorButton" class="navbar-item">
+        <div id="changeColorButton2" class="navbar-item">
           Изменить тему
           </div>
+          <div class="search-panel1">
+            <input type="text" id="searchInput1" placeholder="Поиск">
+            </div>
       </a>
     </div>
       </div>
@@ -106,9 +117,12 @@
   </div>
 
   <div id="notification1">
-   
     <p>Выражайся в чате красивее :></p>
     </div>
+
+    <div id="notification2">
+      <p>Если вы общаетесь не с браузера Google Chrome, вы можете видеть не все сообщения!</p>
+      </div>
 
   <script src="scriptchat.js"></script>
   <script>function teleport() {
